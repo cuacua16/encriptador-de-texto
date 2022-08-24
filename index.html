@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+
+    <script src="https://kit.fontawesome.com/831b4209f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="mode">Cambiar Tema <i class="fa-solid fa-toggle-off"></i></div>
+    <div class="container">
+        <i class="logo"><i class="fa-solid fa-key"></i></i>
+        <div class="container-input">
+
+            <textarea name="text" id="text" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <p class="advertencia">
+                    <span class="material-symbols-outlined">error</span>
+                    Solo letras minúsculas y sin acentos.
+                </p>
+                <div class="botones">
+
+                    <button id="encriptar">Encriptar <i class="fa-solid fa-lock"></i></button>
+                    <button id="desencriptar">Desencriptar <i class="fa-solid fa-lock-open"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container-result">
+            <div id="loading">
+                <h3 id="puntos">Loading...</h3>
+            </div>
+            <textarea readonly id="result">El texto encriptado aparecerá aquí</textarea>
+            <div>
+                <p id="mensajeCopiado"></p>
+
+                <div class="botones">
+                    <button id="copiar">Copiar <i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
